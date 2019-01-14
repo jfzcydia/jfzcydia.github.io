@@ -1,0 +1,13 @@
+Origin: iPad2's Repo
+Label: iPad2's Repo
+Suite: stable
+Version: 1.0
+Codename: JFZcydia
+Architectures: iphoneos-arm
+Components: main
+Description: JFZ's iPad2 test Repo.
+MD5Sum:
+ d6f91e9dd2f9f3a9cca705460dfc2740 11831 Packages
+ 4efbe24ed5fe9a9373b036e0042433a0 3949 Packages.gz
+ b751eac072d28cea6f5f5f5eaef453b9 4082 Packages.bz2
+ 
