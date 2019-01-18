@@ -97,7 +97,7 @@
                         $("#changesList").append(
                            $("<a class='link-item list-group-item'>")
                                .attr("href","changelog.html?p="+bundleid)
-                               .text("历史更新记录")
+                               .text("历史记录")
                        );
                    }
                }
@@ -171,15 +171,13 @@
    <main id="content">
       <h2 role="header">简介</h2>
       <ul id="descriptionList">
-         <li id="screenshotsLink">
-            <a href="#" target="_blank" role="button">截图</a>
-         </li>
+         <li id="screenshotsLink"></li>
       </ul>
 
-      <h2 role="header">更新 <span id="versionBadge" /></h2>
+      <h2 role="header">更新 <span id="versionBadge" style="color: #fff; background-color: #333;" /></h2>
       <ul id="changesList">
          <li id="changelogLink">
-            <a href="#" target="_blank" role="button">记录</a>
+            <a href="#" target="_blank" role="button"></a>
          </li>
       </ul>
 
