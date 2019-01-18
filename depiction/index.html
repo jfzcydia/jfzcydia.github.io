@@ -58,7 +58,7 @@
             ,"#descriptionList"   :
             {"type":"list"
                ,"source" :"package>descriptionlist>description"
-               ,"paragraphElement"  : "<p>"
+               ,"paragraphElement"  : ""
                ,"emptyListCallback":function(e){$("#descriptionPanel").hide()}
             }
             ,"#screenshotsLink"   :
@@ -71,7 +71,7 @@
                   }
                   // 创建屏幕截图链接
                   $("#descriptionList").append(
-                     $("<a role='button'>")
+                     $("<li><a role='button'></li>")
                         .attr("href","screenshots.html?p="+bundleid)
                         .text("屏幕截图")
                   );
