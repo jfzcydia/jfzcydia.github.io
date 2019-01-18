@@ -6,7 +6,7 @@ Depends: firmware (>= 10.0), mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm
 Filename: deb/wifi_2.0.deb
 Size: 13066
-MD5sum: ae73eefaea37de2dd0b080fa2d67262e
+MD5sum: 50629d0a06bce03864babda9112bd921
 Description: control wireless/控制wifi网络
 Name: wifi
 Author: iOS Creatix <cardflourish101@gmail.com>
