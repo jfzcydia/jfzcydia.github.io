@@ -5,9 +5,10 @@ Maintainer: JFZ <jianfengzhi@qq.com>
 Depends: firmware (>= 10.0), mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm
 Filename: deb/wifi_2.0.deb
-Size: 13046
-MD5sum: 816a2ec2e0f4833432973e0e04825dec
+Size: 13066
+MD5sum: ae73eefaea37de2dd0b080fa2d67262e
 Description: control wireless/控制wifi网络
 Name: wifi
 Author: iOS Creatix <cardflourish101@gmail.com>
+Depiction: https://jfzcydia.github.io/depiction/?p=wifi
 
