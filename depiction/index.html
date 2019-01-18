@@ -58,7 +58,7 @@
             ,"#descriptionList"   :
             {"type":"list"
                ,"source" :"package>descriptionlist>description"
-               ,"paragraphElement"  : ""
+               ,"paragraphElement"  : "<p>"
                ,"emptyListCallback":function(e){$("#descriptionPanel").hide()}
             }
             ,"#screenshotsLink"   :
@@ -171,7 +171,7 @@
    <main id="content">
       <h2 role="header">简介</h2>
       <ul>
-         <li id="descriptionList"></li>
+         <li id="descriptionList" />
          <li id="screenshotsLink">
             <a role="button">屏幕截图</a>
          </li>
