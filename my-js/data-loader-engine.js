@@ -48,9 +48,9 @@ function data_loader_engine(contentBlocks,xml) {
 						var item = $(value).text()
 						
 						if (!!contentInfo.reverseRender) {
-							$(key).prepend( $(contentInfo.paragraphElement).html(item) )
+							$(key).prepend( $(contentInfo.paragraphElement).html("<p>"+item+"</p>") )
 						} else {
-							$(key).append( $(contentInfo.paragraphElement).html(item) )
+							$(key).append( $(contentInfo.paragraphElement).html("<p>"+item+"</p>") )
 						}
 					});
 				}
