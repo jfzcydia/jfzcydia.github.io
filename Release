@@ -1,13 +1,8 @@
-Origin: test
-Label: test
+Origin: Reposi3
+Label: Reposi3
 Suite: stable
 Version: 1.0
-Codename: testcydia
+Codename: ios
 Architectures: iphoneos-arm
 Components: main
-Description: test repo
-MD5Sum:
- c3573128f0ed1712edb703e7c5e1d381 425 Packages
- d4cc959926cae8d0742f5a08e6845148 357 Packages.gz
- 6caf65b365f26d55fdd7b4cf735288a0 391 Packages.bz2
- 
+Description: Reposi3 - a cydia repo template

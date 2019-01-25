@@ -1,2 +1,2 @@
 # jfzcydia.github.io
-JFZ's iPad2 Test Repo
+JFZ's Test Repo
