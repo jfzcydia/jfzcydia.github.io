@@ -27,12 +27,8 @@
     color: #13CE66;
 }
 
-#unsupport {
-    color: #F76260;
-}
-
 #least {
-    color: #13CE66;
+    color: #F76260;
 }
 
 #untest {
@@ -43,8 +39,19 @@
     color: #10AEFF;
 }
 
+#packageError {
+    text-align: center;
+}
+
+#packageError span {
+    padding: 0.2em 0.5em;
+    background: #F76260;
+    color: #fff;
+    border-radius: 2px;
+}
+
 .badge {
-    padding: 0px 0.2em;
+    padding: 0 0.2em;
     color: #fff;
     text-align: center;
     background-color: #777;

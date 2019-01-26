@@ -201,14 +201,63 @@
                 </div>
             </section>
         </div>
+        <!-- 错误提示 -->
+        <section id="packageError" style="display:none">
+            <span><strong>FUCK！</strong> 你要查看的软件包不存在</span>
+        </section>
+        <script type="text/javascript">
+        function setAnchorTargets() {
+            // if on Cydia, set link targets to _blank
+            if (navigator.userAgent.search(/Cydia/) != -1) {
+                $("a").each(function() {
+                    $(this).attr("target", "_blank");
+                });
+            }
+        }
+
+        var repoContents = {
+            "#repoFooterLinks": {
+                "type": "custom",
+                "source": "repo>footerlinks>link",
+                "render": function(element, source) {
+                    $.each(source, function(index, data) {
+                        var a = $("<a>");
+                        a.attr("href", $(data).find('url').text());
+                        if ($(data).find('iconclass')) {
+                            var i = $("<i>")
+                            i.attr("class", $(data).find('iconclass').text());
+                            console.log(i);
+                            $(a).append(i);
+                        }
+                        $(a).append($(data).find('name').text());
+                        $(element).append(a);
+                    }); //each
+                } //render
+            }
+        }
+        $(document).ready(function() {
+            $.ajax({
+                type: "GET",
+                dataType: "xml",
+                url: ("../repo.xml"),
+                cache: false,
+                success: function(xml) {
+                    data_loader_engine(repoContents, xml);
+                    setAnchorTargets();
+                },
+                error: function() {
+                    $("#contact").hide();
+                    setAnchorTargets();
+                }
+            }); //ajax
+
+
+        }); // ready
+        </script>
         <!-- 版权联系 -->
         <section id="contact" class="block">
             <p role="footer">&copy 2019 见风致</p>
-            <p>
-                <a href="https://github.com/lichongjia"><i class="fa fa-github"></i>GitHub</a>
-                <a href="https://twitter.com/lichongjia"><i class="fa fa-twitter"></i>@lichongjia</a>
-                <a href="https://weibo.com/lichongjia"><i class="fa fa-weibo"></i>新浪微博</a>
-            </p>
+            <p id="repoFooterLinks"></p>
         </section>
     </main>
 </body>
