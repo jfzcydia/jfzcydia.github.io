@@ -7,7 +7,3 @@ Architectures: iphoneos-arm
 Components: main
 Description: this is a test repo
 MD5Sum:
- b885dbaf4f99143b4a261ee96b6f5a81 1300 Packages
- 64a272466eb1f5d243a51b4deec9111f 497 Packages.gz
- 2d702f4bf1d6ecbac079bb18f3c4ee01 580 Packages.bz2
- 

@@ -1,28 +1,42 @@
-Package: com.supermamon.newpackage
+Package: com.jianfengzhi.newpackage
 Version: 2.0.0-1
 Section: Tweaks
-Maintainer: Reposi3 <reposithree@gmail.com>
-Depends: firmware (>7.0), mobilesubstrate
+Maintainer: JFZ <jianfengzhi@qq.com>
+Depends: firmware (>=7.0), mobilesubstrate
 Architecture: iphoneos-arm
-Filename: ./debs/com.supermamon.newpackage_2.0.0-1_iphoneos-arm.deb
-Size: 854
-MD5sum: 85a01c41aaaa72b48b08d9d0a67f3016
+Filename: deb/newpackage_2.0.0-1.deb
+Size: 866
+MD5sum: 9e38c5447a4b0a21349609c754656f8d
 Description: This is a sample new package. Firmware should be greater than 7.0
 Name: New Package
-Author: Reposi3 <reposithree@gmail.com>
-Depiction: https://supermamon.github.io/Reposi3/depictions/?p=com.supermamon.newpackage
+Author: JFZ <chongjialee@gmail.com>
+Depiction: https://jfzcydia.github.io/depiction/?p=newpackage
 
-Package: com.supermamon.oldpackage
+Package: com.jianfengzhi.oldpackage
 Version: 1.0.0-1
 Section: Tweaks
-Maintainer: Reposi3 <reposithree@gmail.com>
-Depends: firmware (<7.0)
+Maintainer: JFZ <jianfengzhi@qq.com>
+Depends: firmware (<=7.0)
 Architecture: iphoneos-arm
-Filename: ./debs/com.supermamon.oldpackage_1.0.0-1_iphoneos-arm.deb
-Size: 860
-MD5sum: 8c606f0c05217aa2a20949091fe516f0
-Description: This is a sample old package. Firmware should be lower than 7.0
+Filename: deb/oldpackage_1.0.0-1.deb
+Size: 874
+MD5sum: 9b146c19db674504a9fa4f6339434882
+Description: This is a sample old package.Firmware should be less than 7.0
 Name: Old Package
-Author: Reposi3 <reposithree@gmail.com>
-Depiction: https://supermamon.github.io/Reposi3/depictions/?p=com.supermamon.oldpackage
+Author: JFZ <chongjialee@gmail.com>
+Depiction: https://jfzcydia.github.io/depiction/?p=oldpackage
+
+Package: com.jianfengzhi.test
+Version: 2.0
+Section: Tweaks
+Maintainer: JFZ <jianfengzhi@qq.com>
+Depends: firmware (>= 10.0), mobilesubstrate (>= 0.9.5000)
+Architecture: iphoneos-arm
+Filename: deb/test_2.0.deb
+Size: 13024
+MD5sum: 9d06837e3a48975f9ad58bea08bd8bad
+Description: This is test package.
+Name: Test
+Author: JFZ <chongjialee@gmail.com>
+Depiction: https://jfzcydia.github.io/depiction/?p=test
 
